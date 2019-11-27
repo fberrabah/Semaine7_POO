@@ -5,3 +5,6 @@ class City:
 
     def show_location(self):
         print("la ville {} est dans le département {}".format(self.ville,self.dep))
+
+    def change_location(self):
+        print("la ville {} est dans le département {}".format(self.ville,self.dep ))
