@@ -13,7 +13,7 @@ marseille = City("Marseille", 13)
 marseille.show_location()
 
 
-paris = City("Paris", 75000)
+paris = City("Paris", 75)
 paris.change_location()
 
 lille = City("Lille", 59000)
