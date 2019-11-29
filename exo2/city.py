@@ -1,6 +1,6 @@
-from cities import *
+from cities import * #import cities for data
 class City:
-    def __init__(self, i):
+    def __init__(self, i): #add constructor with value none
         self.name = None
         self.departement = None
         self.country = None
@@ -10,7 +10,7 @@ class City:
         self.king = None
         self.hydrat(i)
 
-    def hydrat(self, i):
+    def hydrat(self, i): 
         for key_name, value_name in i.items():
             if hasattr(self, key_name):
                 setattr(self, key_name, value_name)
@@ -21,7 +21,7 @@ class City:
     def change_location(self):
         print("la ville {} est dans le département {}".format(self.ville,self.dep ))
 
-    def show_information(self):
+    def show_information(self): #def for display i correctly
         text = "------------------\n \
         Name: {}\n \
         Departement: {}\n \
