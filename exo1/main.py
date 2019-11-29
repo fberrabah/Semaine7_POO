@@ -1,7 +1,8 @@
-from city import City
+from city import City #import City for take def 
 
-paris = City("Paris", 75)
-paris.show_location()
+
+paris = City("Paris", 75) #add paris for City with key and value
+paris.show_location()#start show_location with info paris
 
 lille = City("Lille", 59)
 lille.show_location()
@@ -13,8 +14,8 @@ marseille = City("Marseille", 13)
 marseille.show_location()
 
 
-paris = City("Paris", 75000)
-paris.change_location()
+paris = City("Paris", 75000) #add paris for City with new value
+paris.change_location() #start paris with change_location()
 
 lille = City("Lille", 59000)
 lille.change_location()
