@@ -1,6 +1,4 @@
 # coding: utf8
-title= []
-pages= []
 
 books_list = [
     ['Katinka', ['page1', 'page2', 'page3', 'page4', 'page5']],
