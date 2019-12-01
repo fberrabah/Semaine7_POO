@@ -17,8 +17,11 @@ if __name__ == '__main__':
     # A new reader come in the library
     reader = Reader()
     # He wants to borrow a book but this one does not exists so an exception shows up
-    reader.borrow_book(library, 'test')
-    # Instead he borrows Harry Potter (OK it is not a title but let's keep things simple)
+    try:
+        reader.borrow_book(library, 'test')
+    except:
+        print("Désolé nous n'avons pas ce livre.")
+    print(reader.page)
     reader.borrow_book(library, 'Harry Poter')
     # Then he read the whole book
     reader.read_book()

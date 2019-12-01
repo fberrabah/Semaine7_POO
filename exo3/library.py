@@ -10,8 +10,8 @@ class Library():
        
 
     def get_book(self, title):
-        for book in books : 
-            if title == book.title
-            return book
+        for book in self.books : 
+            if book.title == title:
+                return book
         raise Exception("Votre livre n'est pas dans bibliotéque.")
         

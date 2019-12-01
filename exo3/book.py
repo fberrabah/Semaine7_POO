@@ -2,7 +2,10 @@
 
 class Book():
 
-    def __init__(self, title, pages):                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-        self.title= title
-        self.pages= pages
-        self.current_page= -1
+    def __init__(self, **parametre):                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        self.title=parametre ["title"]
+        self.pages=parametre ["pages"]
+
+    
+    def __str__(self):
+        return "Title: {0}, Pages:\n {1}".format(self.title,self.pages)
